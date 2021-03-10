@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>construcción</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      [class*=underlay] {
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+      }
+      .underlay-photo {
+        animation: hue-rotate 6s infinite;
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuMAMV1ln60f9YxrcQOlWI9yeovBhvo49hg&usqp=CAU');
+        -webkit-filter: grayscale(30%);
+        z-index: -1;
+}
+    body{
+      overflow: hidden;
+    }
+    body{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #000;
+    }
+    .wavy{
+        position: relative;
+        -webkit-box-reflect: below -12px linear-gradient(
+            transparent, rgba(0,0,0.0.2));
+            height: 50px;
+    }
+    .wavy span{
+        position: relative;
+        display: inline-block;
+        color: #000;
+        font-size: 2em;
+        text-transform: uppercase;
+        animation: animate 1s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+    }
+    @keyframes animate
+    {
+        0%
+        {
+            transform: translateY(0px);
+        }
+        20%
+        {
+            transform: translateY(-20px);
+        }
+        40%,100%
+        {
+            transform: translateY(0px);
+        }
+    }
+    </style>
+    <body>
+        <div class="wavy">
+        <span style="--i:1;">E</span>
+        <span style="--i:2;">n</span>
+        <span style="--i:1;"></span>
+        <span style="--i:3;">C</span>
+        <span style="--i:4;">o</span>
+        <span style="--i:5;">n</span>
+        <span style="--i:6;">s</span>
+        <span style="--i:7;">t</span>
+        <span style="--i:8;">r</span>
+        <span style="--i:9;">u</span>
+        <span style="--i:8;">c</span>
+        <span style="--i:7;">c</span>
+        <span style="--i:6;">i</span>
+        <span style="--i:5;">ó</span>
+        <span style="--i:4;">n</span>
+        <span style="--i:3;">.</span>
+        <span style="--i:2;">.</span>
+        <span style="--i:1;">.</span>
+        </div>
+ <div class="underlay-photo"></div>
+  <footer class="mt-auto text-white-50">
+    <button  type="button" class="btn btn-info"><a href="index.html"><i class="fas fa-undo-alt"></i> RETROCEDER</a></button>
+    <button  type="button" class="btn btn-info"><a href="contactanos.html"><i class="fas fa-info"></i> CONTACTANOS</a></button>
+    </footer>
+</div>
+  </body>
+</html>

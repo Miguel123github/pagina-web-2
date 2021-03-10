@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Marcos y Miguel Home</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      [class*=underlay] {
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+      }
+      .underlay-photo {
+        animation: hue-rotate 6s infinite;
+        background: url('https://ciberseguridad.blog/content/images/2018/02/notificaci-n_violaciones_de_seguridad.jpg');
+        background-size: cover;
+        -webkit-filter: grayscale(30%);
+        z-index: -1;
+}
+      .bubbles img{
+        width: 50px;
+        animation: bubble 7s linear infinite;
+      }
+      .bubbles{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: -70px;
+        right: 50px;
+      }
+
+      @keyframes bubble{
+        0%{
+          transform: translateY(0);
+          opacity: 0;
+        }
+        50%{
+          
+          opacity: 1;
+        }
+        70%{
+          
+          opacity: 1;
+        }
+        100%{
+          transform: translateY(-80vh);
+          opacity: 0;
+        }
+
+      }
+
+      .bubbles img:nth-child(1){
+        animation-delay: 2s;
+        width: 25px;
+      }
+      .bubbles img:nth-child(2){
+        animation-delay: 1s;
+      }
+      .bubbles img:nth-child(3){
+        animation-delay: 3s;
+        width: 25px;
+      }
+      .bubbles img:nth-child(4){
+        animation-delay: 4.5s;
+      }
+      .bubbles img:nth-child(5){
+        animation-delay: 3s;
+      }
+      .bubbles img:nth-child(6){
+        animation-delay: 6s;
+        width: 20px;
+      }
+      .bubbles img:nth-child(7){
+        animation-delay: 7s;
+        width: 35px;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    body{
+      overflow: hidden;
+    }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Marcos y Miguel Blog</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Introduccion</a>
+        <a class="nav-link" href="asignaturas.html">Asignaturas</a>
+        <a class="nav-link" href="construccion.html">Construcción</a>
+      </nav>
+    </div>
+  </header>
+  <main class="px-3">
+    <h1>Bienvenidos a la pagina principal</h1>
+    <p>Desde asignaturas, puedes acceder a los apuntes del curso</p>
+    <p>
+      <a href="error.html" class="btn btn-lg btn-secondary fw-bold border-white bg-danger"><i class="fas fa-ban"></i> No pulsar</a>
+    </p>
+  </main>
+  <div class="bubbles">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+  </div>
+  <div class="underlay-photo"></div>
+  <footer class="mt-auto text-white-50">
+    <button type="button" class="btn btn-info"><a href="contactanos.html"><i class="fas fa-info"></i> CONTACTANOS</a></a></button>
+    </footer>
+</div>
+  </body>
+</html>
